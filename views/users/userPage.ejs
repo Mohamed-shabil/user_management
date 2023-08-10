@@ -1,0 +1,14 @@
+<%- include('../partials/_header') %>
+<div class="tank">
+    <div class="details">
+        <h5>Name  : <%=user[0].name%></h5>
+        <h5>Email : <%=user[0].email%></h5>
+        <h5>phone : <%=user[0].phone%></h5>
+        <hr>
+        <form class="text-center" action="/logout" method="post">
+            <button class="btn btn-primary">logout</button>
+        </form>
+    </div>
+</div>
+
+<%- include('../partials/_footer') %>
